@@ -1248,12 +1248,31 @@ section,
     left: 0;
     width: 100vw;
     z-index: 5;
+    padding: 0 10px;
   }
 
-  .hero-carousel .item img {
-    width: 50vw;
-    height: auto;
-    display: block;
+  .hero-carousel .item{
+    box-sizing: border-box;
+
+    border-radius: 14px;
+    overflow: hidden;
+    line-height: 0;  
+  }
+
+  .owl-theme .owl-dots{ margin-top: 8px; }
+
+  .hero-carousel .owl-stage-outer{
+    overflow: visible;       /* let the 3px border show */
+    padding-bottom: 6px;     /* safety buffer for border/shadow */
+  }
+
+  .hero-carousel .owl-item{ padding: 0 !important; }
+
+  .hero-carousel .item img{
+     display: block;
+    width: 100%;
+    height: auto;             /* ← show the whole image, no cropping */
+    object-fit: contain;
   }
 
   .hero-container {
@@ -1272,7 +1291,6 @@ section,
     margin-top: 20px;
   }
 }
-
 
 .hero .hero-background {
   position: absolute;
