@@ -1,0 +1,31 @@
+# 🚫 Protect .env file
+<Files ".env">
+  Require all denied
+</Files>
+
+# Enable RewriteEngine
+RewriteEngine On
+
+# 1️⃣ Redirect old .html URLs to clean URLs (SEO-friendly)
+RewriteCond %{THE_REQUEST} \s/aqua-pro/([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# 2️⃣ Internally rewrite clean URLs to .html files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# 3️⃣ Optional: PHP handler (if needed)
+AddHandler x-httpd-php74 .php
+
+# 4️⃣ Browser caching (optional, keep if you want)
+ExpiresActive On
+ExpiresByType "image/jpeg" "A86400"
+ExpiresByType "image/jpg" "A86400"
+ExpiresByType "image/gif" "A86400"
+ExpiresByType "image/png" "A86400"
+ExpiresByType "image/svg+xml" "A86400"
+ExpiresByType "image/webp" "A86400"
+ExpiresByType "text/css" "A86400"
+ExpiresByType "text/javascript" "A86400"
+ExpiresByType "application/javascript" "A86400"
