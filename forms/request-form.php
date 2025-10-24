@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $service = trim($_POST['service'] ?? '');
 
     if (!$name || !$email || !$phone || !$service) {
-        header("Location: https://aquapropc.com/aquapro-lp/form-error.html");
+        header("Location: https://morataplumbingmiami.com/morata/form-error.html");
         exit;
     }
 
@@ -24,22 +24,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        // $mail->Username   = 'aquapropc@gmail.com';
-        // $mail->Password   = 'vmxgpykbazkwakhg';
         
-        $mail->Username   = 'aquaprolpleads@gmail.com';
-        $mail->Password   = 'iubemfjobpwhwhua--';
+        $mail->Username   = 'morataleads@gmail.com';
+        $mail->Password   = 'yhicvdrelaydnhxh';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
         // From & To
-        $mail->setFrom('aquaprolpleads@gmail.com', 'Aqua Pro');
-        $mail->addAddress('aquaprolpleads@gmail.com');
+        $mail->setFrom('morataleads@gmail.com', 'Morata Plumbing');
+        $mail->addAddress('morataplumbing@yahoo.com');
 
         // Add CC recipients
-        // $mail->addCC('harry@astraresults.com');
-        // $mail->addCC('development@astraresults.com');
-        // $mail->addCC('joseph@astraresults.com');
+        $mail->addCC('development@astraresults.com');
 
         // Content
         $mail->isHTML(true);
@@ -54,15 +50,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->send();
 
-        header("Location: https://aquapropc.com/aquapro-lp/thank-you.html");
+        header("Location: https://morataplumbingmiami.com/morata/thank-you.html");
         exit;
 
     } catch (Exception $e) {
-        header("Location: https://aquapropc.com/aquapro-lp/form-error.html");
+        header("Location: https://morataplumbingmiami.com/morata/form-error.html");
         exit;
     }
 
 } else {
-    header("Location: https://aquapropc.com/aquapro-lp/form-error.html");
+    header("Location: https://morataplumbingmiami.com/morata/form-error.html");
     exit;
 }
