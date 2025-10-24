@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/../PHPMailer/src/Exception.php';
-require __DIR__ . '/../PHPMailer/src/PHPMailer.php';
-require __DIR__ . '/../PHPMailer/src/SMTP.php';
+require __DIR__ . '/../wp-includes/PHPMailer/src/Exception.php';
+require __DIR__ . '/../wp-includes/PHPMailer/src/PHPMailer.php';
+require __DIR__ . '/../wp-includes/PHPMailer/src/SMTP.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 

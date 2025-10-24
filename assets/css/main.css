@@ -376,7 +376,7 @@ h6 {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url('/assets/img/custom-icons/check-mark.svg') no-repeat center;
+  background: url('../../assets/img/custom-icons/check-mark.svg') no-repeat center;
   background-size: contain;
   vertical-align: middle;
 }
@@ -385,7 +385,7 @@ h6 {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url('https://aquapropc.com/aquapro-lp/assets/img/custom-icons/water-tap.svg') no-repeat center;
+  background: url('../../assets/img/custom-icons/water-tap.svg') no-repeat center;
   background-size: contain;
   vertical-align: middle;
 }
@@ -394,7 +394,7 @@ h6 {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url('https://aquapropc.com/aquapro-lp/assets/img/custom-icons/hand-holding-wrench.svg') no-repeat center;
+  background: url('../../assets/img/custom-icons/hand-holding-wrench.svg') no-repeat center;
   background-size: contain;
   vertical-align: middle;
 }
@@ -403,7 +403,7 @@ h6 {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url('https://aquapropc.com/aquapro-lp/assets/img/custom-icons/chat.svg') no-repeat center;
+  background: url('../../assets/img/custom-icons/chat.svg') no-repeat center;
   background-size: contain;
   vertical-align: middle;
 }
@@ -1273,12 +1273,13 @@ section,
   }
 }
 
+
 .hero .hero-background {
   position: absolute;
   inset: 10px;
   border-radius: 16px;
   background:
-    url("/assets/img/hero-bg.png") no-repeat center center/cover,
+    url("../../assets/img/hero-bg.png") no-repeat center center/cover,
     linear-gradient(135deg, #ffffff 0%, #29448c 100%);
   z-index: 0;
 }
@@ -1678,7 +1679,7 @@ form button.btn:hover {
   transform: translateY(-50%);
   width: 23px;
   height: 23px;
-  background: url('/assets/img/why-us/icon.svg') no-repeat center;
+  background: url('../../assets/img/why-us/icon.svg') no-repeat center;
   background-size: contain;
 }
 
@@ -2138,7 +2139,7 @@ form button.btn:hover {
 --------------------------------------------------------------*/
 .cta-section {
   position: relative;
-  background-image: url("https://aquapropc.com/aquapro-lp/assets/img/section-bg.webp");
+  background-image: url("../../assets/img/section-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2419,7 +2420,7 @@ form button.btn:hover {
 --------------------------------------------------------------*/
 .contact-section {
   position: relative;
-  background-image: url("/assets/img/footer/footer-bg.webp");
+  background-image: url("../../assets/img/footer/footer-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
