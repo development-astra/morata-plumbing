@@ -68,6 +68,7 @@ try {
             <p><strong>Phone:</strong> $phone</p>
             <p><strong>Service:</strong> $service</p>
         ";
+        
 
     
     // Send email
